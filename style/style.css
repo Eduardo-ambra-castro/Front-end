@@ -1,0 +1,72 @@
+/* Pseudo-classes dinâmicas */
+div:hover {
+    color: orange;
+}
+
+a:active {
+    color: blue;
+}
+
+a:visited {
+    color: red;
+}
+
+input:focus {
+    background-color: yellow;
+}
+
+/* Pseudo-classes estruturais */
+
+/* Este seletor define a cor laranja para o primeiro filho li dentro de qualquer elemento pai */
+li:first-child {
+    color: orange;
+}
+
+/* Este seletor define a cor vermelha para o último filho li dentro de qualquer elemento pai */
+li:last-child {
+    color: red;
+}
+
+/* Este seletor define a cor verde para cada segundo filho li dentro de qualquer elemento pai */
+li:nth-child(2n+2) {
+    color: green;
+}
+/* odd - impar/ even - par-> filhos pares/ 2n + 2 
+(selecionando um e depois o intervado deles - selecionando o filho 2}
+
+/* Este seletor define a cor laranja para todos os filhos li que não possuem a classe "meu-item" */
+li:not(.meu-item) {
+    color: rgb(99, 8, 8);
+}
+/* Pseudo-classes de validação */
+
+/* qualquer elemento "checkable" */
+:checked{
+    margin-left: 20px;
+}
+input[type='checkbox']:checked{
+    margin-left: 40px;
+}
+
+option:checked{
+    color:red;
+    /* Personaliza apenas a primeira letra */
+}p::first-letter{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 42px;
+    color: lightskyblue;
+    margin-right: 12px;
+    line-height: 1;
+}
+
+p::first-line{
+    color:blue
+}
+p::selection{
+    background-color: violet;
+    color:red
+}
+
+::marker{
+    color:green
+}

@@ -1,0 +1,12 @@
+/* Pseudo-classes dinâmicas */
+p::first-letter {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 42px;
+    color: lightskyblue;
+    margin-right: 12px;
+    line-height: 1;
+}
+
+p::first-line {
+    color: blue
+}
